@@ -6,7 +6,15 @@ go build main.go
 
 Example:
 
-unc main() {
+package main
+
+import (
+	"fmt"
+	"github.com/124um/cache.git"
+)
+
+func main() {
+	cache
 	newCache := cache.New()
 	err := newCache.Set("Boniy", 24)
 	printErr(err)
